@@ -27,7 +27,6 @@ pwx = []
 
 s = requests.Session()
 rgb = random.choice(['\x1b[0;91m', '\x1b[0;92m', '\x1b[0;93m', '\x1b[0;94m', '\x1b[0;95m', '\x1b[0;96m', '\x1b[0;97m', '\x1b[0m'])
-ua = open('.ua', 'r').read()
 ip = s.get('https://api-asutoolkit.cloudaccess.host/ip.php').text
 	
 ct = datetime.now()
